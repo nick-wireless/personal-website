@@ -1,0 +1,13 @@
+{
+  "name": "personal-website",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "gridsome": "^0.6.0",
+    "gridsome-plugin-tailwindcss": "^2.2.24"
+  }
+}
