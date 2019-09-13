@@ -9,5 +9,8 @@
   "dependencies": {
     "gridsome": "^0.6.0",
     "gridsome-plugin-tailwindcss": "^2.2.24"
+  },
+  "devDependencies": {
+    "vue-svg-loader": "^0.12.0"
   }
 }
