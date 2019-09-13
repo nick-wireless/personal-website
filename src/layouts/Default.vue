@@ -1,15 +1,17 @@
 <template>
-  <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metaData.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about">About</g-link>
+  <div class="max-w-3xl mx-auto px-6 md:px-8">
+    <header class="text-cp1-800 pt-10">
+      <div class="flex justify-between items-center">
+        <g-link class="text-lg font-semibold" to="/">Nick Hanigan</g-link>
+        <div class="block md:hidden">Menu</div>
+      </div>
+      <nav class="nav hidden md:block">
+        <g-link class="nav__link" to="/">About</g-link>
+        <g-link class="nav__link" to="/blog">Blog</g-link>
+        <g-link class="nav__link" to="/blog">Images</g-link>
       </nav>
     </header>
-    <slot/>
+    <slot />
   </div>
 </template>
 
@@ -23,28 +25,10 @@ query {
 
 <style>
 body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-}
-
-.layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
+  @apply font-sans antialiased bg-cp2-100 text-cp1-800;
 }
 
 .nav__link {
-  margin-left: 20px;
+  @apply text-cp1-1000;
 }
 </style>

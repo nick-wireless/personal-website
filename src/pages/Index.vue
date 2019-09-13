@@ -1,33 +1,29 @@
 <template>
-  <Layout>
-    
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-    
-    <h1>Hello, world!</h1>
-   
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
-
-  </Layout>
+<Layout>
+  <body>
+    <p
+      class="mt-6 sm:mt-8 md:mt-10"
+    >Hi! I'm Nick Hanigan a creative working on some cool things across very different time scales: short, medium and long. Many people know me as the person behind the Hopscotch Fold, a wallet for 2 (two) x mobile phones. That website is over here.</p>
+    <p
+      class="mt-6 sm:mt-8 md:mt-10"
+    >I am from Australia's smallest capital. I sailed the seas and travelled the outback before launching an international work career.</p>
+    <p
+      class="mt-6 sm:mt-8 md:mt-10"
+    >I rarely spend time on the socials and only check my personal inbox once every 2 weeks or so. That said, a photo journal that somewhat describes 'me' is here and I am genuinely intrigued that people may be interested to reach out by email to connect.</p>
+    <p
+      class="mt-6 sm:mt-8 md:mt-10"
+    >Every 12 monthis I intend to send out an insider's guide to my creative year. If I'm busy, I will send it every 6 months to keep it short and sweet. Enter your email address here to follow those creative adventures.</p>
+  </body>
+</Layout>
 </template>
 
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: "Nick Hanigan"
   }
-}
+};
 </script>
 
 <style>
-.home-links a {
-  margin-right: 1rem;
-}
 </style>
