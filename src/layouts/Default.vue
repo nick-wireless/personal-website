@@ -5,10 +5,12 @@
         <g-link class="text-lg font-semibold" to="/">Nick Hanigan</g-link>
         <MenuIcon class="fill-current logo md:hidden"></MenuIcon>
       </div>
-      <nav class="nav hidden md:block">
-        <g-link class="nav__link" to="/">About</g-link>
-        <g-link class="nav__link" to="/blog">Blog</g-link>
-        <g-link class="nav__link" to="/blog">Images</g-link>
+      <nav
+        class="hidden md:py-6 md:block md:w-full md:flex md:justify-start md:text-base md:border-b-2 md:font-semibold"
+      >
+        <g-link class="pl-2 pr-6" to="/">About</g-link>
+        <g-link class="px-6" to="/hopscotch">Hopscotch</g-link>
+        <g-link class="px-6" to="/blog">Images</g-link>
       </nav>
     </header>
     <slot />
@@ -35,9 +37,9 @@ export default {
 
 <style>
 body {
-  @apply font-sans antialiased bg-cp2-100 text-cp1-800;
+  @apply font-sans antialiased bg-teal-100 text-cp1-900;
 }
-.nav__link {
+.active {
   @apply text-cp1-1000;
 }
 .logo {
